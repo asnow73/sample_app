@@ -7,6 +7,8 @@ gem 'rails', '4.0.0'
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails'
+  gem 'spork-rails', :github => 'sporkrb/spork-rails'
+  # gem 'spork'
 end
 
 # Use SCSS for stylesheets
