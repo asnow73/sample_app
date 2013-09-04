@@ -7,6 +7,8 @@ gem 'rails', '4.0.0'
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails'
+  gem 'spork-rails', :github => 'sporkrb/spork-rails'
+  # gem 'spork'
 end
 
 # Use SCSS for stylesheets
@@ -20,6 +22,9 @@ gem 'coffee-rails', '~> 4.0.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 gem 'therubyracer', platforms: :ruby
+gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+gem "twitter-bootstrap-rails"
+#gem 'bootstrap-sass'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
