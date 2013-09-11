@@ -9,6 +9,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'spork-rails', :github => 'sporkrb/spork-rails'
   # gem 'spork'
+  gem 'faker'
 end
 
 # Use SCSS for stylesheets
@@ -25,6 +26,8 @@ gem 'therubyracer', platforms: :ruby
 gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 gem "twitter-bootstrap-rails"
 #gem 'bootstrap-sass'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
