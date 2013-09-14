@@ -18,6 +18,7 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @title = @user.name
+    @microposts = @user.microposts.paginate(page: params[:page])
   end
 
   def create
@@ -57,14 +58,6 @@ class UsersController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
       params.require(:user).permit(:name, :email, :password, :password_confirmation)
-    end
-
-    def signed_in_user
-      if signed_in? == false
-        store_location
-        flash[:notice] = "Please sign in."
-        redirect_to signin_url# unless signed_in?
-      end
     end
 
     def correct_user
