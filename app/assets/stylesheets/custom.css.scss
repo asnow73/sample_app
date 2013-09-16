@@ -122,7 +122,7 @@ footer {
 aside {
   section {
     padding: 10px 0;
-    border-top: 1px solid $lightGray;
+    /* border-top: 1px solid $lightGray; */
     &:first-child {
       border: 0;
       padding-top: 0;
@@ -140,6 +140,27 @@ aside {
       margin-top: 0px;
     }
   }
+}
+
+.stats {
+	overflow: auto;
+	a {
+	  float: left;
+	  padding: 0 10px;
+	  border-left: 1px solid $lightGray;
+	  color: gray;
+	  &:first-child {
+	    padding-left: 0;
+	    border: 0;
+	  }
+	  &:hover {
+	    text-decoration: none;
+	    color: #0000FF;
+	  }
+	}
+	strong {
+	  display: block;
+	}
 }
 
 .gravatar {
